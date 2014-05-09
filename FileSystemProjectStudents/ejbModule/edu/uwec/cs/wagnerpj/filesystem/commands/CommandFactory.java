@@ -65,6 +65,8 @@ public abstract class CommandFactory {
 			commandTable.put("cd", new CdCommand(fs));
 			commandTable.put("rm", new RmfileCommand(fs));
 			commandTable.put("rmdir", new RmdirCommand(fs));
+			commandTable.put("cat", new CatCommand(fs));
+			commandTable.put("du", new DuCommand(fs));
 		}
 	}
 

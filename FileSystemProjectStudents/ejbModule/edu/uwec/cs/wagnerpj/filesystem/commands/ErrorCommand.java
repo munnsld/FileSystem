@@ -26,3 +26,4 @@ public class ErrorCommand extends AbstractCommand {
 		return ("Error - invalid command");
 	}
 }
+//no idea how to recurse using the iterator pattern

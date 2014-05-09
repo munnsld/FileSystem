@@ -44,6 +44,13 @@ public class Directory extends FileSystemObject {
 		children.add(child);
 	}
 	
+	//-removeChild(child) - removes a child from this directory
+	
+	public void removeChild(String child){
+		children.remove(child);
+	}
+	
+	
 	// -- countChildren - count the number of children in the directory
 	public int countChildren() {
 		return children.size();

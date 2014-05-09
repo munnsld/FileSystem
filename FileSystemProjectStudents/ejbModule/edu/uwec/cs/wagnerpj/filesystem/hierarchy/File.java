@@ -30,6 +30,10 @@ public class File extends FileSystemObject {
 		return "File: " + getName() + " (" + size + ")\n";
 	}
 	
+	public String getContents(){
+		return contents;
+	}
+	
 	// -- display() - display the file information to a string
 	public String display(int level) {
 		String displayString = "";

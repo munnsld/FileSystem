@@ -7,6 +7,7 @@
 package edu.uwec.cs.wagnerpj.filesystem.hierarchy;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * @author paul
@@ -46,8 +47,14 @@ public class Directory extends FileSystemObject {
 	
 	//-removeChild(child) - removes a child from this directory
 	
-	public void removeChild(String child){
-		children.remove(child);
+	public void removeChild(String name){
+		Iterator<FileSystemObject> it = children.iterator();
+		while(it.hasNext()) {
+			FileSystemObject f = it.next();
+			if(f.getName().equals(name)) {
+				it.remove();
+			}
+		}
 	}
 	
 	

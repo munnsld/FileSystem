@@ -16,7 +16,7 @@ import java.util.Iterator;
 public class Directory extends FileSystemObject {
 	// data
 	// TODO: add arraylist of children (of any file system type) to implement Composite recursive structure
-	protected ArrayList <FileSystemObject> children;
+	 ArrayList <FileSystemObject> children;
 	// methods
 	// constructors
 	// -- default constructor

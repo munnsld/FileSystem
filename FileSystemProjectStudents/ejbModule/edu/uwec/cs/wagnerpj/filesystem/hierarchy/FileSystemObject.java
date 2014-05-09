@@ -26,6 +26,11 @@ public abstract class FileSystemObject {
 		this.setName(name);
 		this.size = size;
 	}
+	
+	public int getSize(){
+		
+		return size;
+	}
 
 	// other methods	
 	// -- display() - generate display string from file system traversal
